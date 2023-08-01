@@ -1,4 +1,4 @@
-namespace _1.InAndOut_01.Models
+namespace InAndOut.Models
 {
     public class ErrorViewModel
     {

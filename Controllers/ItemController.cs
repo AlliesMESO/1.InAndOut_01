@@ -1,9 +1,9 @@
-﻿using _1.InAndOut_01.Data;
-using _1.InAndOut_01.Models;
+﻿using InAndOut.Data;
+using InAndOut.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
-namespace _1.InAndOut_01.Controllers
+namespace InAndOut.Controllers
 {
     public class ItemController : Controller
     {
@@ -18,6 +18,11 @@ namespace _1.InAndOut_01.Controllers
         {
             IEnumerable<Item> objList = _db.Items;
             return View(objList);
+        }
+
+        public IActionResult Create()
+        {
+            return View();
         }
     }
 }

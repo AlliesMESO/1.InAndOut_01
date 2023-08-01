@@ -1,7 +1,7 @@
-﻿using _1.InAndOut_01.Models;
+﻿using InAndOut.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace _1.InAndOut_01.Data
+namespace InAndOut.Data
 {
     public class ApplicationDbContext :DbContext
     {

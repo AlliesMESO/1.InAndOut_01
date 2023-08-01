@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace _1.InAndOut_01.Controllers
+namespace InAndOut.Controllers
 {
     public class AppointmentController : Controller
     {

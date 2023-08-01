@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace _1.InAndOut_01.Migrations
+namespace InAndOut.Migrations
 {
     public partial class addItemsToDatabase : Migration
     {

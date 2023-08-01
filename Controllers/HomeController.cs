@@ -1,4 +1,4 @@
-﻿using _1.InAndOut_01.Models;
+﻿using InAndOut.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using Microsoft.Extensions.Logging;
 using System;
 
-namespace _1.InAndOut_01.Controllers
+namespace InAndOut.Controllers
 {
     public class HomeController : Controller
     {

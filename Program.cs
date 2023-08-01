@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace _1.InAndOut_01
+namespace InAndOut
 {
     public class Program
     {
