@@ -31,9 +31,13 @@ namespace InAndOut.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(ExpenseType obj)
         {
-            _db.ExpenseTypes.Add(obj);
-            _db.SaveChanges();
-            return RedirectToAction("Index");
+            if (ModelState.IsValid)
+            {
+                _db.ExpenseTypes.Add(obj);
+                _db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(obj);
         }
 
         // GET-Delete

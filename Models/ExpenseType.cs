@@ -9,6 +9,5 @@ namespace InAndOut.Models
         public int Id { get; set; }
         [Required]
         public string Name { get; set; }
-        public virtual Expense Expense { get; set; }
     }
 }

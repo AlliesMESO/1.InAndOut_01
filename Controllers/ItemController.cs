@@ -9,7 +9,7 @@ namespace InAndOut.Controllers
     {
         private readonly ApplicationDbContext _db;
 
-        public ItemController(ApplicationDbContext db) 
+        public ItemController(ApplicationDbContext db)
         {
             _db = db;
         }
@@ -28,7 +28,7 @@ namespace InAndOut.Controllers
 
         //POST-Create
         [HttpPost]
-            [ValidateAntiForgeryToken]
+        [ValidateAntiForgeryToken]
         public IActionResult Create(Item obj)
         {
             _db.Items.Add(obj);

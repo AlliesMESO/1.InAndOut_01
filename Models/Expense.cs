@@ -15,8 +15,8 @@ namespace InAndOut.Models
         [Range(1, int.MaxValue, ErrorMessage ="Amount must be greater than 0!")]
         public int Amount { get; set; }
         [DisplayName("Expense Type")]
+        public int ExpenseTypeId { get; set; }
         [ForeignKey("ExpenseTypeId")]
-        public int? ExpenseTypeId { get; set; }
         public virtual ExpenseType ExpenseType { get; set; } 
     }
 }
